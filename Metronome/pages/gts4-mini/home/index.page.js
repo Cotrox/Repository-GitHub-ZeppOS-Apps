@@ -1,10 +1,12 @@
-import { LOGO_PARAMS, TEXT_PARAMS, BUTTON_PARAMS } from './index.style';
+import { LOGO_PARAMS, TEXT_PARAMS, BUTTON_PARAMS } from './index.params';
 
 const logger = DeviceRuntimeCore.HmLogger.getLogger('Home');
 
 Page({
   build() {
     logger.debug('page build invoked');
+    
+    hmApp.setScreenKeep(true);
 
     // Logo
     const logo = hmUI.createWidget(hmUI.widget.IMG, {

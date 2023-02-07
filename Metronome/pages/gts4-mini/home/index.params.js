@@ -44,7 +44,7 @@ export const BUTTON_PARAMS = {
         vibrate.stop();
         vibrate.scene = 25;
         vibrate.start();
-
+        
         //console.log(option.hour)
       },
       {
