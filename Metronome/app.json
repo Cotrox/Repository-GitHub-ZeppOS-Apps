@@ -26,7 +26,8 @@
       "module": {
         "page": {
           "pages": [
-            "pages/gts4-mini/home.structure"
+            "pages/gts4-mini/home",
+            "pages/gts4-mini/settings"
           ],
           "window": {
             "navigationBarBackgroundColor": "#ffffff",
