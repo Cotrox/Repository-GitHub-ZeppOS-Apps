@@ -14,6 +14,9 @@ Page({
       height: DEVICE_HEIGHT
     } = hmSetting.getDeviceInfo();
 
+    // Timer Settings
+    let is_timer_running = false;
+
     // Logo
     const logo = hmUI.createWidget(hmUI.widget.IMG, {
       src: 'icon.png',
@@ -54,7 +57,11 @@ Page({
             vibrate.stop();
             vibrate.scene = 25;
             vibrate.start();
-            
+
+            if(is_timer_running) {
+              timer.stopTimer(interval);
+            }
+
             //console.log(option.hour)
           },
           {
@@ -63,8 +70,6 @@ Page({
             second: 0
           }
         )
-    
-        //timer.stopTimer(interval)
       }
     });
   },

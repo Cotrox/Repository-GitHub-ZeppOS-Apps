@@ -9,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@zeppos/device-types": "^1.0.0"
+    "@zeppos/device-types": "^3.0.0"
+  },
+  "dependencies": {
+    "i18n": "^0.15.1",
+    "zeus": "^3.3.2"
   }
 }
