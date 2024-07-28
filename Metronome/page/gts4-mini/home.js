@@ -51,12 +51,13 @@ Page({
       color: 0x000000,
       click_func: (button_widget) => {    
         const interval = timer.createTimer(
-          10,
+          0,
           1000,
           (option) => {
             vibrate.stop();
             vibrate.scene = 25;
             vibrate.start();
+            is_timer_running = is_timer_running == true ? false : true;
 
             if(is_timer_running) {
               timer.stopTimer(interval);

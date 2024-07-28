@@ -1,5 +1,0 @@
-{
-    "editor.wordWrap": "on", // WordWrap at the End of Display
-    "editor.formatOnSave": true, // Auto Indent Format on Save
-    "html.format.wrapLineLength": 0 // Force No-Wrap on Auto-Indent
-}
